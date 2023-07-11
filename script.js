@@ -10,8 +10,9 @@ $(document).ready(function () {
     //created event listener for the save buttons to save the user input to localStorage
     hourBlock.children(".saveBtn").on("click", function () {
         var textInput = $(this).siblings(".entertext").val();
-        localStorage.setItem($(this).parent().attr("id"), textInput);
-    });
+        var hour = $(this).parent().attr("id");
+        localStorage.setItem(hour, textInput);
+    })
 
     //create a for loop to run through the time blocks
     for (var i = 0; i < hourBlock.length; i++) {
@@ -29,9 +30,17 @@ $(document).ready(function () {
 
     //create a for loop to run through the hour blocks and make changes to the hour blocks that are in the past, present, and future
     for(var i = 9; i <= 17; i++){
-        var enterText = hourBlock.eq(i-9).children(".entertext");
+        var enterText = hourBlock.eq(i+9).children(".entertext");
         //retrieve the inputed text from localStorage and display it in the correct hour block
-        enterText.val(localStorage.getItem("hour-block-" + i));
+        $("#hour-9am .entertext").val(localStorage.getItem("hour-9am"));
+        $("#hour-10am .entertext").val(localStorage.getItem("hour-10am"));
+        $("#hour-11am .entertext").val(localStorage.getItem("hour-11am"));
+        $("#hour-12pm .entertext").val(localStorage.getItem("hour-12pm"));
+        $("#hour-13pm .entertext").val(localStorage.getItem("hour-13pm"));
+        $("#hour-14pm .entertext").val(localStorage.getItem("hour-14pm"));
+        $("#hour-15pm .entertext").val(localStorage.getItem("hour-15pm"));
+        $("#hour-16pm .entertext").val(localStorage.getItem("hour-16pm"));
+        $("#hour-17pm .entertext").val(localStorage.getItem("hour-17pm"));
     }
 
     $('#todayDate').text(todayDate);
