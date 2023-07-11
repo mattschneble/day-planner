@@ -38,4 +38,4 @@ Throughout the development of this program I was able to develop my JavaScript, 
 
 ## Credits
 
- All code was entered by myself, except for the source code provided by UC Berkely Full Stack Development Course. The source code was entered on commit "925c6c1". I also utilized the sites above to help gain a stronger understanding of concepts and how to use proper syntax, but all code was entered by myself.
+ I would like to thank Henry Weigand and Kyle Vance for leading pseudocode sessions, as well as some of my classmates (including but not limited to), Thomas Munzar, Sonam Sherpa who asked great questions during the pseudocoding sessions to help increase understanding. All code was entered by myself, except for the source code provided by UC Berkely Full Stack Development Course. The source code was entered on commit "925c6c1". I also utilized the sites above to help gain a stronger understanding of concepts and how to use proper syntax, but all code was entered by myself.
