@@ -29,7 +29,7 @@ $(document).ready(function () {
 
     //create a for loop to run through the hour blocks and make changes to the hour blocks that are in the past, present, and future
     for(var i = 9; i <= 17; i++){
-        var enterText = hourBlock.eq(i-9).sibling(".entertext");
+        var enterText = hourBlock.eq(i-9).children(".entertext");
         //retrieve the inputed text from localStorage and display it in the correct hour block
         enterText.val(localStorage.getItem("hour-block-" + i));
     }
